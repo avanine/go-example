@@ -1,10 +1,17 @@
-# fly.toml app configuration file generated for test-autumn-breeze-2105 on 2024-09-08T15:41:04+03:00
+# fly.toml app configuration file generated for test-small-dew-6532 on 2024-09-08T16:17:58+03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'test-autumn-breeze-2105'
+app = 'test-small-dew-6532'
 primary_region = 'ams'
+
+[build]
+  [build.args]
+    GO_VERSION = '1.22'
+
+[env]
+  PORT = '8080'
 
 [http_service]
   internal_port = 8080
